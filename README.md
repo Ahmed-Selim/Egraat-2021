@@ -10,6 +10,7 @@
 - Postman.
 - MySQL.
 - JQuery.
+- Font Awesome Icons
 ----
 ## Showcase ##
 
