@@ -3,16 +3,18 @@
 require_once __DIR__ . './../app/header.php';
 require_once __DIR__ . './add-record.service.php';
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    add_record($_POST) ;
-}
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//     add_record($_POST) ;
+// }
 ?>
 
+<!-- action="//localhost/pro/views/app/redirect.php" -->
 
 <h4 dir="rtl" class="text-center">أضافة إذن شغل</h4>
 
 <section dir="rtl" class="container-fluid px-3">
-    <form method="POST" role="form" class="border border-3 border-primary rounded text-center needs-validation" novalidate>
+    <form method="POST" role="form"   
+        class="border border-3 border-primary rounded text-center needs-validation" novalidate>
 
         <div class="row justify-content-around mt-3">
             <div class="form-group col-3">
@@ -26,7 +28,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="form-group col-3">
                 <label for="equipment_id" class="form-label">المعدة</label>
-                <select name="equipment_id" id="equipment_id" class="form-select" required>
+                <select name="equipment_id" id="equipment_id"
+                    class="form-select" required>
                     <option value="" selected disabled>اختر المعدة ...</option>
                     <?php //getEquipments(); ?>
                 </select>
